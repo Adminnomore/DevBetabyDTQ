@@ -2384,11 +2384,11 @@ local posZ = 0
 --Create Tabs
     Tabs.Main:AddParagraph({
         Title = "Farming",
-        Content = "Auto Farm"
+        Content = "Farm tự động"
     })
 
     local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
-        Title = "Dropdown",
+        Title = "Lựa chọn",
         Values = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,
@@ -2438,7 +2438,7 @@ local posZ = 0
     end)
 
 
-    local ToggleAutoFarmLevel = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "Auto Farm Level", Default = false })
+    local ToggleAutoFarmLevel = Tabs.Main:AddToggle("ToggleAutoFarmLevel", {Title = "Tự động Farm Level", Default = false })
     ToggleAutoFarmLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
@@ -2541,7 +2541,7 @@ local posZ = 0
 
       Tabs.Main:AddButton({
         Title = "Redeem All Code",
-        Description = "Redeem all code x2 exp",
+        Description = "Reddem All Code X2",
         Callback = function()
             UseCode()
         end
@@ -2569,8 +2569,8 @@ local posZ = 0
 
 
     Tabs.Main:AddButton({
-        Title = "Fps Booster",
-        Description = "Boost your fps",
+        Title = "FPS Booster",
+        Description = "Fix Lag",
         Callback = function()
             FPSBooster()
         end
@@ -2626,7 +2626,7 @@ local posZ = 0
     })
 
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
-        Title = "Farm Mode",
+        Title = "Chế độ Farm",
         Values = {"Level","Near Mobs",},
         Multi = false,
         Default = 1,
