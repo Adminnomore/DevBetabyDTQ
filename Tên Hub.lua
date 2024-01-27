@@ -4362,7 +4362,7 @@ end
 
 
 
-_G.FastAttackDelay = 0.13
+_G.FastAttackDelay = 0.14
 
     local Client = game.Players.LocalPlayer
     local STOP = require(Client.PlayerScripts.CombatFramework.Particle)
@@ -4377,7 +4377,7 @@ _G.FastAttackDelay = 0.13
                     if Hits then
                         if FastAttack then
                             STOP.play = function() end
-                            a:Play(0.01,0.01,0.01)
+                            a:Play(0.02,0.02,0.02)
                             func(Hits)
                             STOP.play = shared.cpc
                             wait(a.length * 0.5)
@@ -4580,7 +4580,7 @@ Options.ToggleMelee:SetValue(false)
 
 
 
-local ToggleDe = Tabs.Stats:AddToggle("ToggleDe", {Title = "Auto Defense", Default = false })
+local ToggleDe = Tabs.Stats:AddToggle("ToggleDe", {Title = "Nâng phòng thủ", Default = false })
 ToggleDe:OnChanged(function(Value)
     _G.Auto_Stats_Defense = Value
     end)
@@ -4588,7 +4588,7 @@ Options.ToggleDe:SetValue(false)
 
 
 
-local ToggleSword = Tabs.Stats:AddToggle("ToggleSword", {Title = "Auto Sword", Default = false })
+local ToggleSword = Tabs.Stats:AddToggle("ToggleSword", {Title = "Nâng kiếm", Default = false })
 ToggleSword:OnChanged(function(Value)
     _G.Auto_Stats_Sword = Value
     end)
@@ -4596,14 +4596,14 @@ Options.ToggleSword:SetValue(false)
 
 
 
-local ToggleGun = Tabs.Stats:AddToggle("ToggleGun", {Title = "Auto Gun", Default = false })
+local ToggleGun = Tabs.Stats:AddToggle("ToggleGun", {Title = "Sơn súng tăng dame", Default = false })
 ToggleGun:OnChanged(function(Value)
     _G.Auto_Stats_Gun = Value
     end)
 Options.ToggleGun:SetValue(false)
 
 
-local ToggleFruit = Tabs.Stats:AddToggle("ToggleFruit", {Title = "Auto Demon Fruit", Default = false })
+local ToggleFruit = Tabs.Stats:AddToggle("ToggleFruit", {Title = "Tăng sát thương trái ác quỷ", Default = false })
 ToggleFruit:OnChanged(function(Value)
     _G.Auto_Stats_Devil_Fruit = Value
     end)
@@ -4704,7 +4704,7 @@ end)
     
 Tabs.Player:AddButton({
     Title = "Refresh Dropdown",
-    Description = "Refresh player list",
+    Description = "Làm mới danh sách người chơi",
     Callback = function()
         Playerslist = {}
         SelectedPly:Clear()
@@ -4714,7 +4714,7 @@ Tabs.Player:AddButton({
     end          
 })
 
-local ToggleTeleport = Tabs.Player:AddToggle("ToggleTeleport", {Title = "Teleport To Player", Default = false })
+local ToggleTeleport = Tabs.Player:AddToggle("ToggleTeleport", {Title = "Dịch chuyển tới người chơi", Default = false })
 ToggleTeleport:OnChanged(function(Value)
     _G.TeleportPly = Value
     pcall(function()
@@ -4728,7 +4728,7 @@ Options.ToggleTeleport:SetValue(false)
 
 
 
-local ToggleQuanSat = Tabs.Player:AddToggle("ToggleQuanSat", {Title = "Spectate Player", Default = false })
+local ToggleQuanSat = Tabs.Player:AddToggle("ToggleQuanSat", {Title = "Quan sát", Default = false })
 ToggleQuanSat:OnChanged(function(Value)
     SpectatePlys = Value
     local plr1 = game:GetService("Players").LocalPlayer.Character.Humanoid
@@ -4779,8 +4779,8 @@ Tabs.Teleport:AddButton({
 
 
 Tabs.Teleport:AddParagraph({
-    Title = "Island",
-    Content = "Teleport to Island"
+    Title = "Hòn đảo",
+    Content = "Dịch chuyển tới hòn đảo"
 })
 
 if First_Sea then
@@ -4844,7 +4844,7 @@ elseif Third_Sea then
     end
 
 local DropdownIsland = Tabs.Teleport:AddDropdown("DropdownIsland",{
-    Title = "Dropdown",
+    Title = "Dịch chuyển",
     Values = IslandList,
     Multi = false,
     Default = 1,
@@ -4857,7 +4857,7 @@ end)
 
 
 
-local ToggleIsland = Tabs.Teleport:AddToggle("ToggleIsland", {Title = "Teleport", Default = false })
+local ToggleIsland = Tabs.Teleport:AddToggle("ToggleIsland", {Title = "Dịch chuyển", Default = false })
 ToggleIsland:OnChanged(function(Value)
     _G.TeleportIsland = Value
     if _G.TeleportIsland == true then
@@ -5152,7 +5152,7 @@ spawn(function()
     end)
 end)
 
-local ToggleCollect = Tabs.Fruit:AddToggle("ToggleCollect", {Title = "Collect Devil Fruit", Default = false })
+local ToggleCollect = Tabs.Fruit:AddToggle("ToggleCollect", {Title = "Nhặt trái cây", Default = false })
 ToggleCollect:OnChanged(function(Value)
     _G.Tweenfruit = Value
 end)
@@ -5171,12 +5171,12 @@ end
 end)
 
 Tabs.Fruit:AddParagraph({
-    Title = "Esp",
+    Title = "Định vị",
     Content = ""
 })
 
 
-local ToggleEspPlayer = Tabs.Fruit:AddToggle("ToggleEspPlayer", {Title = "Esp Player", Default = false })
+local ToggleEspPlayer = Tabs.Fruit:AddToggle("ToggleEspPlayer", {Title = "Định vị người chơi", Default = false })
 
 ToggleEspPlayer:OnChanged(function(Value)
     ESPPlayer = Value
@@ -5185,7 +5185,7 @@ end)
 Options.ToggleEspPlayer:SetValue(false)
 
 
-local ToggleEspFruit = Tabs.Fruit:AddToggle("ToggleEspFruit", {Title = "Esp Devil Fruit", Default = false })
+local ToggleEspFruit = Tabs.Fruit:AddToggle("ToggleEspFruit", {Title = "Định vị trái cây", Default = false })
 
 ToggleEspFruit:OnChanged(function(Value)
     DevilFruitESP = Value
@@ -5198,7 +5198,7 @@ Options.ToggleEspFruit:SetValue(false)
 
 
 
-local ToggleEspIsland = Tabs.Fruit:AddToggle("ToggleEspIsland", {Title = "Esp Island", Default = false })
+local ToggleEspIsland = Tabs.Fruit:AddToggle("ToggleEspIsland", {Title = "Định vị hòn đảo", Default = false })
 
 ToggleEspIsland:OnChanged(function(Value)
     IslandESP = Value
@@ -5252,7 +5252,7 @@ end)
 local Chips = {"Flame","Ice","Quake","Light","Dark","Spider","Rumble","Magma","Buddha","Sand","Phoenix","Dough"}
 
 local DropdownRaid = Tabs.Raid:AddDropdown("DropdownRaid", {
-    Title = "Dropdown",
+    Title = "Raid",
     Values = Chips,
     Multi = false,
     Default = 1,
@@ -5262,7 +5262,7 @@ DropdownRaid:OnChanged(function(Value)
     SelectChip = Value
 end)
 
-local ToggleBuy = Tabs.Raid:AddToggle("ToggleBuy", {Title = "Buy Chip", Default = false })
+local ToggleBuy = Tabs.Raid:AddToggle("ToggleBuy", {Title = "Mua Chip", Default = false })
 ToggleBuy:OnChanged(function(Value)
     _G.Auto_Buy_Chips_Dungeon = Value
 end)
