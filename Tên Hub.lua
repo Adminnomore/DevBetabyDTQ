@@ -4,20 +4,20 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 --------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "Beta Hub",
-    SubTitle = "by admin",
+    SubTitle = "by ĐTQ",
     TabWidth = 160,
     Size = UDim2.fromOffset(450, 300),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Darker",
+    Theme = "Lighter",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "settings" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "baby" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "cherry" }),
+    Main = Window:AddTab({ Title = "Chính", Icon = "home" }),
+    Setting = Window:AddTab({ Title = "Cài đặt", Icon = "settings" }),
+    Stats = Window:AddTab({ Title = "Chỉ số", Icon = "plus-circle" }),
+    Player = Window:AddTab({ Title = "Người chơi", Icon = "baby" }),
+    Teleport = Window:AddTab({ Title = "Dịch chuyển", Icon = "palmtree" }),
+    Fruit = Window:AddTab({ Title = "Trái ác quỷ", Icon = "cherry" }),
     Raid = Window:AddTab({ Title = "Dungeon", Icon = "swords" }),
     Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
     Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
