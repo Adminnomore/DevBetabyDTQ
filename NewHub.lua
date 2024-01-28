@@ -2383,7 +2383,7 @@ local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
     Tabs.Main:AddParagraph({
-        Title = "Farming",
+        Title = "Farm",
         Content = "Farm tự động"
     })
 
@@ -2565,8 +2565,12 @@ local posZ = 0
     UseCode("Axiore")
     UseCode("TantaiGaming")
     UseCode("STRAWHATMAINE")
-
-
+    UseCode("GAMER_ROBOT_1M")
+    UseCode("ADMIN_STRENGTH")
+    UseCode("NEWTROLL")
+    UseCode("SECRET_ADMIN")
+    UseCode("TY_FOR_WATCHING")
+    UseCode("THEGREATACE")
 
     Tabs.Main:AddButton({
         Title = "FPS Booster",
@@ -2627,7 +2631,7 @@ local posZ = 0
 
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
         Title = "Chế độ Farm",
-        Values = {"Level","Near Mobs",},
+        Values = {"Cấp độ","Các mob gần",},
         Multi = false,
         Default = 1,
     })
@@ -2654,7 +2658,7 @@ local posZ = 0
 
     KillPercent = 40
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
-        Title = "Health %",
+        Title = "Máu %",
         Description = "Health for mastery",
         Default = 40,
         Min = 0,
@@ -3240,7 +3244,7 @@ spawn(function()
 end)
 
 
-local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Farm Cake Prince", Default = false })
+local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Tự động Farm Cake Prince", Default = false })
 ToggleCake:OnChanged(function(Value)
  _G.CakePrince = Value
 end)
@@ -3320,7 +3324,7 @@ spawn(function()
 
 
 
-    local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Farm Ectoplasm", Default = false })
+    local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Tự động farm vật chất kì dị", Default = false })
     ToggleVatChatKiDi:OnChanged(function(Value)
         _G.Ecto = Value
     end)
@@ -3389,7 +3393,7 @@ spawn(function()
 
 
     local DropdownBoss = Tabs.Main:AddDropdown("DropdownBoss", {
-        Title = "Dropdown",
+        Title = "Dropdown ",
         Values = tableBoss,
         Multi = false,
         Default = 1,
@@ -5283,7 +5287,7 @@ spawn(function()
 end)
 
 
-    local ToggleStart = Tabs.Raid:AddToggle("ToggleStart", {Title = "Start Raid", Default = false })
+    local ToggleStart = Tabs.Raid:AddToggle("ToggleStart", {Title = "Bắt đầu Raid", Default = false })
     ToggleStart:OnChanged(function(Value)
         _G.Auto_StartRaid = Value
 end)
@@ -5332,7 +5336,7 @@ spawn(function()
 end)
 
 
-local ToggleNextIsland = Tabs.Raid:AddToggle("ToggleNextIsland", {Title = "Next Island", Default = false })
+local ToggleNextIsland = Tabs.Raid:AddToggle("ToggleNextIsland", {Title = "Qua đảo tiếp theo", Default = false })
 ToggleNextIsland:OnChanged(function(Value)
     AutoNextIsland = Value
 end)
@@ -5377,7 +5381,7 @@ spawn(function()
 end)
 
 
-local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Get Fruit Low Bely", Default = false })
+local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Nhận trái cây ít bely", Default = false })
 ToggleGetFruit:OnChanged(function(Value)
     _G.Autofruit = Value
 end)
@@ -5642,7 +5646,7 @@ Tabs.Race:AddButton({
 
 
 Tabs.Race:AddParagraph({
-    Title = "Auto Race",
+    Title = "Tự động Race",
     Content = ""
 })
 
@@ -5959,7 +5963,7 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddParagraph({
-	Title = "Fighting Style",
+	Title = "Võ",
 	Content = ""
 })
 
@@ -6041,7 +6045,7 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddParagraph({
-	Title = "Items",
+	Title = "Vật phẩm",
 	Content = ""
 })
 
@@ -6065,7 +6069,7 @@ Tabs.Shop:AddButton({
 --misc
 
 Tabs.Misc:AddButton({
-	Title = "Rejoin Server",
+	Title = "Vào lại Server",
 	Description = "",
 	Callback = function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
