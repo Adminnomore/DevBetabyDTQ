@@ -75,6 +75,14 @@ elseif placeId == 7449423635 then
 Third_Sea = true
 end
 
+	function(a)
+		_G.AutoFarm = a
+	StopTween(_G.AutoFarm)
+end)spawn(function()
+    while wait() do
+        if _G.AutoFarm then
+ 	if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then		
+	StartMagnet = false
 --// Check Quest
 function CheckLevel()
 local Lv = game:GetService("Players").LocalPlayer.Data.Level.Value
