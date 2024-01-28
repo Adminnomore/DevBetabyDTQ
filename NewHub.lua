@@ -189,8 +189,8 @@ Ms = "Gladiator"
 NameQuest = "ColosseumQuest"
 QuestLv = 2
 NameMon = "Gladiator"
-CFrameQ = CFrame.new(-1577.7890625, 7.4151420593262, -2984.4838867188)
-CFrameMon = CFrame.new(-1521.3740234375, 81.203170776367, -3066.3139648438)
+CFrameQ = CFrame.new(-1576.11743, 7.38933945, -2983.30762, 0.576966345, 1.22114863e-09, 0.816767931, -3.58496594e-10, 1, -1.24185606e-09, -0.816767931, 4.2370063e-10, 0.576966345)
+CFrameMon = CFrame.new(-1274.75903, 58.1895943, -3188.16309, 0.464524001, 6.21005611e-08, 0.885560572, -4.80449414e-09, 1, -6.76054768e-08, -0.885560572, 2.71497012e-08, 0.464524001)
 elseif Lv == 300 or Lv <= 324 or SelectMonster == "Military Soldier" or SelectArea == 'Magma' then -- Military Soldier
 Ms = "Military Soldier"
 NameQuest = "MagmaQuest"
