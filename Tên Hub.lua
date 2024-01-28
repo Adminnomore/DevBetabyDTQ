@@ -91,64 +91,64 @@ Ms = "Monkey"
 NameQuest = "JungleQuest"
 QuestLv = 1
 NameMon = "Monkey"
-CFrameQ = CFrame.new(-1601.6553955078, 36.85213470459, 153.38809204102)
-CFrameMon = CFrame.new(-1448.1446533203, 50.851993560791, 63.60718536377)
+CFrameQ = CFrame.new(-1604.12012, 36.8521118, 154.23732, 0.0648873374, -4.70858913e-06, -0.997892559, 1.41431883e-07, 1, -4.70933674e-06, 0.997892559, 1.64442184e-07, 0.0648873374)
+CFrameMon = CFrame.new(-1502.74609, 98.5633316, 90.6417007, 0.836947978, 0, 0.547282517, -0, 1, -0, -0.547282517, 0, 0.836947978)
 elseif Lv == 15 or Lv <= 29 or SelectMonster == "Gorilla" or SelectArea == 'Jungle' then -- Gorilla
 Ms = "Gorilla"
 NameQuest = "JungleQuest"
 QuestLv = 2
 NameMon = "Gorilla"
-CFrameQ = CFrame.new(-1601.6553955078, 36.85213470459, 153.38809204102)
-CFrameMon = CFrame.new(-1142.6488037109, 40.462348937988, -515.39227294922)
+CFrameQ = CFrame.new(-1604.12012, 36.8521118, 154.23732, 0.0648873374, -4.70858913e-06, -0.997892559, 1.41431883e-07, 1, -4.70933674e-06, 0.997892559, 1.64442184e-07, 0.0648873374)
+CFrameMon = CFrame.new(-1223.52808, 6.27936459, -502.292664, 0.310949147, -5.66602516e-08, 0.950426519, -3.37275488e-08, 1, 7.06501808e-08, -0.950426519, -5.40241736e-08, 0.310949147)
 elseif Lv == 30 or Lv <= 39 or SelectMonster == "Pirate" or SelectArea == 'Buggy' then -- Pirate
 Ms = "Pirate"
 NameQuest = "BuggyQuest1"
 QuestLv = 1
 NameMon = "Pirate"
-CFrameQ = CFrame.new(-1140.1761474609, 4.752049446106, 3827.4057617188)
-CFrameMon = CFrame.new(-1201.0881347656, 40.628940582275, 3857.5966796875)
+CFrameQ = CFrame.new(-1139.59717, 4.75205183, 3825.16211, -0.959730506, -7.5857054e-09, 0.280922383, -4.06310328e-08, 1, -1.11807175e-07, -0.280922383, -1.18718916e-07, -0.959730506)
+CFrameMon = CFrame.new(-1146.49646, 96.0936813, 4312.1333, -0.978175163, -1.53222057e-08, 0.207781896, -3.33316912e-08, 1, -8.31738873e-08, -0.207781896, -8.82843523e-08, -0.978175163)
 elseif Lv == 40 or Lv <= 59 or SelectMonster == "Brute" or SelectArea == 'Buggy' then -- Brute
 Ms = "Brute"
 NameQuest = "BuggyQuest1"
 QuestLv = 2
 NameMon = "Brute"
-CFrameQ = CFrame.new(-1140.1761474609, 4.752049446106, 3827.4057617188)
-CFrameMon = CFrame.new(-1387.5324707031, 24.592035293579, 4100.9575195313)
+CFrameQ = CFrame.new(-1139.59717, 4.75205183, 3825.16211, -0.959730506, -7.5857054e-09, 0.280922383, -4.06310328e-08, 1, -1.11807175e-07, -0.280922383, -1.18718916e-07, -0.959730506)
+CFrameMon = CFrame.new(-1146.49646, 96.0936813, 4312.1333, -0.978175163, -1.53222057e-08, 0.207781896, -3.33316912e-08, 1, -8.31738873e-08, -0.207781896, -8.82843523e-08, -0.978175163)
 elseif Lv == 60 or Lv <= 74 or SelectMonster == "Desert Bandit" or SelectArea == 'Desert' then -- Desert Bandit
 Ms = "Desert Bandit"
 NameQuest = "DesertQuest"
 QuestLv = 1
 NameMon = "Desert Bandit"
-CFrameQ = CFrame.new(896.51721191406, 6.4384617805481, 4390.1494140625)
-CFrameMon = CFrame.new(984.99896240234, 16.109552383423, 4417.91015625)
+CFrameQ = CFrame.new(897.031128, 6.43846416, 4388.97168, -0.804044724, 3.68233266e-08, 0.594568789, 6.97835176e-08, 1, 3.24365246e-08, -0.594568789, 6.75715199e-08, -0.804044724)
+CFrameMon = CFrame.new(932.788818, 6.4503746, 4488.24609, -0.998625934, 3.08948351e-08, 0.0524050146, 2.79967303e-08, 1, -5.60361286e-08, -0.0524050146, -5.44919629e-08, -0.99862593)
 elseif Lv == 75 or Lv <= 89 or SelectMonster == "Desert Officer" or SelectArea == 'Desert' then -- Desert Officer
 Ms = "Desert Officer"
 NameQuest = "DesertQuest"
 QuestLv = 2
 NameMon = "Desert Officer"
-CFrameQ = CFrame.new(896.51721191406, 6.4384617805481, 4390.1494140625)
-CFrameMon = CFrame.new(1547.1510009766, 14.452038764954, 4381.8002929688)
+CFrameQ = CFrame.new(897.031128, 6.43846416, 4388.97168, -0.804044724, 3.68233266e-08, 0.594568789, 6.97835176e-08, 1, 3.24365246e-08, -0.594568789, 6.75715199e-08, -0.804044724)
+CFrameMon = CFrame.new(1580.03198, 4.61375761, 4366.86426, 0.135744005, -6.44280718e-08, -0.990743816, 4.35738308e-08, 1, -5.90598574e-08, 0.990743816, -3.51534837e-08, 0.135744005)
 elseif Lv == 90 or Lv <= 99 or SelectMonster == "Snow Bandit" or SelectArea == 'Snow' then -- Snow Bandit
 Ms = "Snow Bandit"
 NameQuest = "SnowQuest"
 QuestLv = 1
 NameMon = "Snow Bandit"
-CFrameQ = CFrame.new(1386.8073730469, 87.272789001465, -1298.3576660156)
-CFrameMon = CFrame.new(1356.3028564453, 105.76865386963, -1328.2418212891)
+CFrameQ = CFrame.new(1384.14001, 87.272789, -1297.06482, 0.348555952, -2.53947841e-09, -0.937287986, 1.49860568e-08, 1, 2.86358204e-09, 0.937287986, -1.50443711e-08, 0.348555952)
+CFrameMon = CFrame.new(1370.24316, 102.403511, -1411.52905, 0.980274439, -1.12995728e-08, 0.197641045, -9.57343449e-09, 1, 1.04655214e-07, -0.197641045, -1.04482936e-07, 0.980274439)
 elseif Lv == 100 or Lv <= 119 or SelectMonster == "Snowman" or SelectArea == 'Snow' then -- Snowman
 Ms = "Snowman"
 NameQuest = "SnowQuest"
 QuestLv = 2
 NameMon = "Snowman"
-CFrameQ = CFrame.new(1386.8073730469, 87.272789001465, -1298.3576660156)
-CFrameMon = CFrame.new(1218.7956542969, 138.01184082031, -1488.0262451172)
+CFrameQ = CFrame.new(1384.14001, 87.272789, -1297.06482, 0.348555952, -2.53947841e-09, -0.937287986, 1.49860568e-08, 1, 2.86358204e-09, 0.937287986, -1.50443711e-08, 0.348555952)
+CFrameMon = CFrame.new(1370.24316, 102.403511, -1411.52905, 0.980274439, -1.12995728e-08, 0.197641045, -9.57343449e-09, 1, 1.04655214e-07, -0.197641045, -1.04482936e-07, 0.980274439)
 elseif Lv == 120 or Lv <= 149 or SelectMonster == "Chief Petty Officer" or SelectArea == 'Marine' then -- Chief Petty Officer
 Ms = "Chief Petty Officer"
 NameQuest = "MarineQuest2"
 QuestLv = 1
 NameMon = "Chief Petty Officer"
-CFrameQ = CFrame.new(-5035.49609375, 28.677835464478, 4324.1840820313)
-CFrameMon = CFrame.new(-4931.1552734375, 65.793113708496, 4121.8393554688)
+CFrameQ = CFrame.new(-5035.0835, 28.6520386, 4325.29443, 0.0243340395, -7.08064647e-08, 0.999703884, -6.36926814e-08, 1, 7.23777944e-08, -0.999703884, -6.54350671e-08, 0.0243340395)
+CFrameMon = CFrame.new(-4882.8623, 22.6520386, 4255.53516, 0.273695946, -5.40380647e-08, -0.96181643, 4.37720793e-08, 1, -4.37274998e-08, 0.96181643, -3.01326679e-08, 0.273695946)
 elseif Lv == 150 or Lv <= 174 or SelectMonster == "Sky Bandit" or SelectArea == 'Sky' then -- Sky Bandit
 Ms = "Sky Bandit"
 NameQuest = "SkyQuest"
