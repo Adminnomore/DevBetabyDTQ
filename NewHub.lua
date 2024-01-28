@@ -8,7 +8,7 @@ local Window = Fluent:CreateWindow({
     TabWidth = 160,
     Size = UDim2.fromOffset(450, 300),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Lighter",
+    Theme = "Darker",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
 })
 local Tabs = {
@@ -36,7 +36,7 @@ do
     repeat wait() until game:GetService("Players")
     repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChild("Energy")
     
-    wait(0.1)
+    wait(0.2)
     
     if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
     
@@ -75,15 +75,7 @@ elseif placeId == 7449423635 then
 Third_Sea = true
 end
 	
---// Check Quest
-function(a)
-_G.AutoFarm = a
-	StopTween(_G.AutoFarm)
-end)spawn(function()
-    while wait() do
-        if _G.AutoFarm then
- 				if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
-				StartMagnet = false
+--// Check Quest	
 function CheckLevel()
 local Lv = game:GetService("Players").LocalPlayer.Data.Level.Value
 if First_Sea then
