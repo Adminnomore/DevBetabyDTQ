@@ -74,16 +74,16 @@ Second_Sea = true
 elseif placeId == 7449423635 then
 Third_Sea = true
 end
-
-	function(a)
-		_G.AutoFarm = a
+	
+--// Check Quest
+function(a)
+_G.AutoFarm = a
 	StopTween(_G.AutoFarm)
 end)spawn(function()
     while wait() do
         if _G.AutoFarm then
- 	if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then		
-	StartMagnet = false
---// Check Quest
+ 				if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
+				StartMagnet = false
 function CheckLevel()
 local Lv = game:GetService("Players").LocalPlayer.Data.Level.Value
 if First_Sea then
@@ -162,8 +162,8 @@ Ms = "Sky Bandit"
 NameQuest = "SkyQuest"
 QuestLv = 1
 NameMon = "Sky Bandit"
-CFrameQ = CFrame.new(-4842.1372070313, 717.69543457031, -2623.0483398438)
-CFrameMon = CFrame.new(-4955.6411132813, 365.46365356445, -2908.1865234375)
+CFrameQ = CFrame.new(-4841.83447, 717.669617, -2623.96436, -0.875942111, 5.59710216e-08, -0.482416272, 3.04023082e-08, 1, 6.08195947e-08, 0.482416272, 3.86078725e-08, -0.875942111)
+CFrameMon = CFrame.new(-4970.74219, 294.544342, -2890.11353, -0.994874597, -8.61311236e-08, -0.101116329, -9.10836206e-08, 1, 4.43614923e-08, 0.101116329, 5.33441664e-08, -0.994874597)
 elseif Lv == 175 or Lv <= 189 or SelectMonster == "Dark Master" or SelectArea == 'Sky' then -- Dark Master
 Ms = "Dark Master"
 NameQuest = "SkyQuest"
