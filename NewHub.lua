@@ -230,8 +230,8 @@ Ms = "God's Guard"
 NameQuest = "SkyExp1Quest"
 QuestLv = 1
 NameMon = "God's Guard"
-CFrameQ = CFrame.new(-4721.8603515625, 845.30297851563, -1953.8489990234)
-CFrameMon = CFrame.new(-4628.0498046875, 866.92877197266, -1931.2352294922)
+CFrameQ = CFrame.new(-4721.71436, 845.277161, -1954.20105, -0.999277651, -5.56969759e-09, 0.0380011722, -4.14751478e-09, 1, 3.75035256e-08, -0.0380011722, 3.73188307e-08, -0.999277651)
+CFrameMon = CFrame.new(-4716.95703, 853.089722, -1933.92542, -0.93441087, -6.77488776e-09, -0.356197298, 1.12145182e-08, 1, -4.84390199e-08, 0.356197298, -4.92565206e-08, -0.93441087)
 if Auto_Farm and (CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-4607.82275, 872.54248, -1667.55688))
 end
