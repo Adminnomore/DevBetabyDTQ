@@ -2339,7 +2339,7 @@ local function YTZCAJC_fake_script()
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
-	local dragSpeed = 0.25
+	local dragSpeed = 0.3
 	local dragStart = nil
 	local startPos = nil
 	
@@ -2378,7 +2378,7 @@ coroutine.wrap(YTZCAJC_fake_script)()
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- Hehe
 local posX = 0
-local posY = 60
+local posY = 45
 local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
