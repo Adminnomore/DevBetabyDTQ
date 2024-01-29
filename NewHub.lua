@@ -2245,7 +2245,7 @@ end)
 end
 ---Bypass Teleport
 function BTP(P)
-	repeat wait(0.5)
+	repeat wait(0.4)
 		game.Players.LocalPlayer.Character.Humanoid:ChangeState(15)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = P
 		task.wait()
@@ -2282,7 +2282,7 @@ function BTP(p)
 					game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-6508.5581054688, 89.034996032715, -132.83953857422))
 				else
 					Mix_Farm = true
-						repeat wait(0.5)
+						repeat wait(0.4)
 						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = p
 						wait(.05)
 						game.Players.LocalPlayer.Character.Head:Destroy()
