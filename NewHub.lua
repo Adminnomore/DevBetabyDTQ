@@ -2192,9 +2192,9 @@ Type11 = 1
 spawn(function()
     while wait(.1) do
         if Type1 == 1 then
-            Pos2 = CFrame.new(120,60,0)
+            Pos2 = CFrame.new(120,50,0)
         elseif Type1 == 2 then
-            Pos2 = CFrame.new(-120,60,0)
+            Pos2 = CFrame.new(-120,45,0)
         end
         end
     end)
@@ -2214,7 +2214,7 @@ Type1 = 1
 spawn(function()
     while wait(.1) do
         if Type == 1 then
-            Pos = CFrame.new(0,60,0)
+            Pos = CFrame.new(0,50,0)
         elseif Type == 2 then
             Pos = CFrame.new(-30,0,-30)
         elseif Type == 3 then
@@ -2504,7 +2504,7 @@ local posZ = 0
         game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
     end
 
-    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Auto Near Mob", Default = false })
+    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Tự động farm mob gần", Default = false })
     ToggleMobAura:OnChanged(function(Value)
         _G.AutoNear = Value
     end)
@@ -2540,7 +2540,7 @@ local posZ = 0
       end)
 
       Tabs.Main:AddButton({
-        Title = "Redeem All Code",
+        Title = "Sử dụng các code x2",
         Description = "Reddem All Code X2",
         Callback = function()
             UseCode()
@@ -2626,7 +2626,7 @@ local posZ = 0
 --Mastery
     Tabs.Main:AddParagraph({
         Title = "Farm thông thạo",
-        Content = "Tự động Farm thông thạo"
+        Content = "Tự động cày thông thạo"
     })
 
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
@@ -2642,13 +2642,13 @@ local posZ = 0
         TypeMastery = Value
     end)
 
-    local ToggleMasteryFruit = Tabs.Main:AddToggle("ToggleMasteryFruit", {Title = "Auto BF Mastery", Default = false })
+    local ToggleMasteryFruit = Tabs.Main:AddToggle("ToggleMasteryFruit", {Title = "Cày thông thạo trái cây", Default = false })
     ToggleMasteryFruit:OnChanged(function(Value)
         AutoFarmMasDevilFruit = Value
     end)
     Options.ToggleMasteryFruit:SetValue(false)
 
-    local ToggleMasteryGun = Tabs.Main:AddToggle("ToggleMasteryGun", {Title = "Auto Gun Mastery", Default = false })
+    local ToggleMasteryGun = Tabs.Main:AddToggle("ToggleMasteryGun", {Title = "Cày thông thạo súng", Default = false })
     ToggleMasteryGun:OnChanged(function(Value)
         AutoFarmMasGun = Value
     end)
@@ -2659,7 +2659,7 @@ local posZ = 0
     KillPercent = 40
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
         Title = "Máu %",
-        Description = "Health for mastery",
+        Description = "Tăng điểm thông thạo",
         Default = 40,
         Min = 0,
         Max = 100,
