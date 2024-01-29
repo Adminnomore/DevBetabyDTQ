@@ -3490,10 +3490,10 @@ spawn(function()
 
     if First_Sea then
         MaterialList = {
-          "Scrap Metal","Leather","Angel Wings","Magma Ore","Fish Tail"
+          "Scrap Metal","Da","Angel Wings","Quặng dung nham","Đuôi cá"
         } elseif Second_Sea then
         MaterialList = {
-          "Scrap Metal","Leather","Radioactive Material","Mystic Droplet","Magma Ore","Vampire Fang"
+          "Scrap Metal","Da","Radioactive Material","Mystic Droplet","Magma Ore","Vampire Fang"
         } elseif Third_Sea then
         MaterialList = {
           "Scrap Metal","Leather","Demonic Wisp","Conjured Cocoa","Dragon Scale","Gunpowder","Fish Tail","Mini Tusk"
